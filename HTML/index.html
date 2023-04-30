@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../fontawesome-free-6.4.0-web/css/all.css">
+    <title>Document</title>
+    <style>
+        
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .wrapper{
+            height: 1650px;
+            margin: 0px auto;
+        }
+
+        .header{
+            width: 1400px;
+            margin: 0px auto;
+            background: linear-gradient(#fdf2fa, #FFF);
+        }
+        .head{
+            height: 135px;
+            margin: 0px auto;
+            width: 1400px;
+            display: flex;
+            justify-content: center;
+            
+            justify-content: space-between
+          
+           
+            
+        }
+        .head__left{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-left: 50px;
+            
+           
+           
+        }
+        .head__right{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 500px;
+            justify-content: space-between;
+         
+            
+        }
+        .mainmenu{
+            display: flex;
+            list-style: none;
+        }
+        .mainmenu .menuitem{
+            text-decoration: none;
+            color: #0b0205;
+            
+        }
+
+        .mainmenu li:hover>a{
+            color: #f1b0ad;
+        }
+        
+
+        .logotitle{
+            font-size: 30px;
+            margin-left: 10px;
+
+        }
+        .menuitem{
+            font-size: 20px;
+            padding: 10px;
+        }
+        .menuitems{
+
+            padding: 0px 10px;
+        }
+
+        
+        /* .rotated {
+            transform: rotate(-30deg); 
+            padding-top: 40px;
+            padding-right: 30px;
+            
+        } */
+
+        .rotated {
+            overflow: hidden;
+            margin: 0px;
+            min-width: 600px;
+            max-width: 1000px;
+            width: 100%;
+            
+        }
+        .rotated .imgbanner__rotate {
+            transition: all 0.3s;
+            box-sizing: border-box;
+            max-width: 1000px;
+        }
+
+        .rotated:hover .imgbanner__rotate {
+            transform: scale(0.8) rotate(-30deg);
+        }
+
+    
+
+
+
+        .banner{
+            display: flex;
+            margin: 0px auto;
+            width: 1400px;
+            justify-content: space-between;
+            min-height: 600px;
+        }
+        .bannerh1{
+            font-size: 80px;
+            color: #333333;
+
+        }
+        .banner__left{
+            padding-top: 70px;
+            width: 550px;
+            padding-left: 60px;
+        }
+        .banner__right{
+            margin-right: 50px;
+        }
+        .btn1{
+            margin-top: 20px;
+            width: 200px;
+            height: 50px;
+            background: linear-gradient(to right,#ca73fe, #f1b0ad);
+            border: none;
+            border-radius: 15px;
+            color: #fffbfe;
+            font-size: 16px;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .btn1:hover{
+            color: #0b0205;
+            background: #ffffff;
+            border: solid 1px black;
+        }
+        .logobrand{
+            width: 1400px;
+            margin: 0px auto;
+            padding-bottom: 20px;
+           padding-top: 30px;
+        }
+        .menulogotitle{
+           width: 1400px;
+           margin: 0px auto;
+           text-align: center;
+        }
+        .popular{
+            background-color: #fafafa;
+            width: 1400px;
+            margin: 0px auto;
+            text-align: center;
+           
+        }
+        .imgpopular{
+            margin: 0px auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 1200px;
+            
+        }
+        .imgppl{
+            padding: 0px 5px;
+            /* padding-bottom: 40px; */
+            padding-top: 40px;
+        }
+
+        .box {
+            flex: 1;
+            overflow: hidden;
+            transition: .5s;
+            margin: 0 2%;
+            box-shadow: 0 20px 30px rgba(0,0,0,.1);
+            line-height: 0;
+        }
+        .box > .imgppl {
+            width: 100%;
+            height: calc(100% - 10vh);
+            object-fit: cover; 
+            transition: .5s;
+        }
+
+        .box:hover { flex: 1 1 50%; }
+        .box:hover > .imgppl {
+            width: 100%;
+            height: 100%;
+        }
+
+
+        .listitem{
+            min-height: 600px;
+            width: 1400px;
+            margin: 0px auto;
+            text-align: center;
+            padding-top: 40px;
+        }
+        .btnlist{
+            margin-bottom: 30px;
+           
+        }
+        .btn2{
+            width: 100px;
+            height: 40px;
+            margin: 10px;
+            border: solid 1px #c4c2c3;
+            border-radius: 10px;
+            font-size: 14px;
+            color: #0b0205;
+            background: #ffffff;
+           padding: 5px;
+           
+        }
+
+        .btn2:hover{
+            background: linear-gradient(to right,#ca73fe, #f1b0ad);
+            color: #ffffff;
+        }
+
+        .grid-container {
+            width: 1300px;
+            margin: 0px auto;
+            display: grid;
+            grid-template-columns:  325px 325px  325px  325px;
+            padding: 10px;
+            margin-bottom: 40px;
+        }
+        .grid-item {   
+            
+            
+            padding: 20px;
+      
+           
+}
+        .imgshoe{
+            background: #Ecdff1;
+            padding: 30px 10px;
+            border-radius: 30px;
+            width: 260px;
+
+        }
+
+        .info{
+            display: flex;
+            justify-content: space-between;
+            padding-top: 25px;
+        }
+        
+        .btn3{
+            width: 160px;
+            height: 50px;
+            font-size: 20px;
+            background: #fafafa;
+            border: solid 1px #c4c2c3;
+            border-radius: 10px;
+            padding: 0px 10px;
+        }
+
+        .btn3:hover{
+            background: linear-gradient(to right,#ca73fe, #f1b0ad);
+            color: #ffffff;
+        }
+
+        /* .image {
+            opacity: 1;
+            display: block;
+            width: 100%;
+            height: auto;
+            transition: .5s ease;
+            backface-visibility: hidden;
+        } */
+
+        .imgshoe{
+            position: relative;
+        }
+        .imageanimation{
+            opacity: 1;
+            display: block;
+            width: 100%;
+            height: auto;
+            transition: .5s ease;
+            backface-visibility: hidden;
+            
+        } 
+        .middle {
+            display: flex;
+            transition: .5s ease;
+            opacity: 0;
+            position: absolute;
+            top: 80%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            text-align: center;
+            width: 200px;
+            justify-content: space-between;
+            
+        }
+        .imgshoe:hover .imageanimation{
+            opacity: 0.3;
+        }
+        .imgshoe:hover .middle {
+            opacity: 1;
+        }
+        .text {
+            background: linear-gradient(to right,#ca73fe, #f1b0ad);
+            color: white;
+            font-size: 16px;
+            padding: 5px 10px;
+            border-radius: 10px;
+            width: auto;
+            
+        }
+
+        
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <div class="head">
+            <div class="head__left">
+                <img src="../img/logo1.png" alt="">
+                <p class="logotitle"> <b>LACES</b> </p>
+            </div>
+            <div class="head__right">
+                <ul class="mainmenu">
+                    <li class="menuitems"><a href="#" class="menuitem">About</a></li>
+                    <li class="menuitems"><a href="#" class="menuitem">Product</a></li>
+                    <li class="menuitems"><a href="#" class="menuitem">Store locator</a></li>
+                    <li class="menuitems"><a href="#" class="menuitem"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                    <li class="menuitems"><a href="#" class="menuitem"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                </ul>
+            </div>
+            </div>
+            
+            <div class="banner">
+                <div class="banner__left">
+                    <h1 class="bannerh1">WINTER COLLECTION 2022</h1>
+                    <input class="btn1" type="button" value="SHOP NOW">
+                </div>
+
+                <div class="banner__right">
+                    <div class="rotated">
+                        <img src="../img/banner3.jpg" alt="" style="width: 700px;" class="imgbanner__rotate">
+                    </div>
+                </div>
+
+            </div>
+            
+            
+        </div>
+        <div class="logomenu">
+            <div class="menulogotitle">
+                <h2 style="font-size: 30px;">SOME OF OUR TRUSTED BRAND</h2>
+                <div class="logobrand" >
+                    <img style="width: 1300px;" src="../img/logobrand2.PNG" alt="">
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="popular">
+            <h2 style="padding-top: 50px;">POPULAR RIGHT NOW</h2>
+
+
+            <div class="imgpopular">
+                <div class="box">
+                    <div class="imgppl"> <img style="width: 400px;" src="../img/man.PNG" alt=""> </div>
+                </div>
+
+                <div class="box">
+                    <div class="imgppl"> <img style="width: 400px;" src="../img/woman.PNG" alt=""> </div>
+                </div>
+
+                <div class="box">
+                    <div class="imgppl"> <img style="width: 400px;" src="../img/kid.PNG" alt="" srcset=""> </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="listitem">
+            <h1 style="margin: 30px 0px; align-items: center;">NEW ARRIVALS</h1>
+            <div class="btnlist">
+                <input class="btn2" type="button" value="Sneaker">
+                <input class="btn2" type="button" value="Sports">
+                <input class="btn2" type="button" value="Casual">
+                <input class="btn2" type="button" value="Prop">
+                <input class="btn2" type="button" value="Formal">
+            </div>
+           
+           
+           
+           
+            <div class="grid-container">
+                <div class="grid-item">
+                    <div class="shoe">
+                        <div class="imgshoe">
+                            
+                            <i class="fa-solid fa-heart" style="color: #f21c1c; padding-left: 150px; font-size: 20px;"></i>
+                            <img class="imageanimation" src="../img/jordan1uncblue.jpg" alt="" width="200px">
+
+                            <div class="middle">
+                                <div class="text">BUY</div>
+                                <div class="text">ADD TO CART</div>
+                            </div>
+                        
+                        </div>
+                        <div class="info">
+                            <div class="name">
+                                <p style="font-size: 20px; ">Jordan 1</p>
+                            </div>
+                            <div class="cost">
+                                <p style="font-size: 20px; ">$599.00</p>
+                            </div>
+                        </div>
+                        <p style="margin-right: 170px;">infomation</p>
+                    </div>
+                </div>
+               
+               
+               
+               
+               
+               
+               
+                <div class="grid-item">
+                    <div class="shoe">
+                        <div class="imgshoe">
+                            
+                            <i class="fa-solid fa-heart" style="color: #f21c1c; padding-left: 150px; font-size: 20px;"></i>
+                            <img class="imageanimation" src="../img/jordan1uncblue.jpg" alt="" width="200px">
+
+                            <div class="middle">
+                                <div class="text">BUY</div>
+                                <div class="text">ADD TO CART</div>
+                            </div>
+                        
+                        </div>
+                        <div class="info">
+                            <div class="name">
+                                <p style="font-size: 20px; ">Jordan 1</p>
+                            </div>
+                            <div class="cost">
+                                <p style="font-size: 20px; ">$599.00</p>
+                            </div>
+                        </div>
+                        <p style="margin-right: 170px;">infomation</p>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="shoe">
+                        <div class="imgshoe">
+                            
+                            <i class="fa-solid fa-heart" style="color: #f21c1c; padding-left: 150px; font-size: 20px;"></i>
+                            <img class="imageanimation" src="../img/jordan1uncblue.jpg" alt="" width="200px">
+
+                            <div class="middle">
+                                <div class="text">BUY</div>
+                                <div class="text">ADD TO CART</div>
+                            </div>
+                        
+                        </div>
+                        <div class="info">
+                            <div class="name">
+                                <p style="font-size: 20px; ">Jordan 1</p>
+                            </div>
+                            <div class="cost">
+                                <p style="font-size: 20px; ">$599.00</p>
+                            </div>
+                        </div>
+                        <p style="margin-right: 170px;">infomation</p>
+                    </div>
+                </div>  
+                <div class="grid-item">
+                    <div class="shoe">
+                        <div class="imgshoe">
+                            
+                            <i class="fa-solid fa-heart" style="color: #f21c1c; padding-left: 150px; font-size: 20px;"></i>
+                            <img class="imageanimation" src="../img/jordan1uncblue.jpg" alt="" width="200px">
+
+                            <div class="middle">
+                                <div class="text">BUY</div>
+                                <div class="text">ADD TO CART</div>
+                            </div>
+                        
+                        </div>
+                        <div class="info">
+                            <div class="name">
+                                <p style="font-size: 20px; ">Jordan 1</p>
+                            </div>
+                            <div class="cost">
+                                <p style="font-size: 20px; ">$599.00</p>
+                            </div>
+                        </div>
+                        <p style="margin-right: 170px;">infomation</p>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="shoe">
+                        <div class="imgshoe">
+                            
+                            <i class="fa-solid fa-heart" style="color: #f21c1c; padding-left: 150px; font-size: 20px;"></i>
+                            <img class="imageanimation" src="../img/jordan1uncblue.jpg" alt="" width="200px">
+
+                            <div class="middle">
+                                <div class="text">BUY</div>
+                                <div class="text">ADD TO CART</div>
+                            </div>
+                        
+                        </div>
+                        <div class="info">
+                            <div class="name">
+                                <p style="font-size: 20px; ">Jordan 1</p>
+                            </div>
+                            <div class="cost">
+                                <p style="font-size: 20px; ">$599.00</p>
+                            </div>
+                        </div>
+                        <p style="margin-right: 170px;">infomation</p>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="shoe">
+                        <div class="imgshoe">
+                            
+                            <i class="fa-solid fa-heart" style="color: #f21c1c; padding-left: 150px; font-size: 20px;"></i>
+                            <img class="imageanimation" src="../img/jordan1uncblue.jpg" alt="" width="200px">
+
+                            <div class="middle">
+                                <div class="text">BUY</div>
+                                <div class="text">ADD TO CART</div>
+                            </div>
+                        
+                        </div>
+                        <div class="info">
+                            <div class="name">
+                                <p style="font-size: 20px; ">Jordan 1</p>
+                            </div>
+                            <div class="cost">
+                                <p style="font-size: 20px; ">$599.00</p>
+                            </div>
+                        </div>
+                        <p style="margin-right: 170px;">infomation</p>
+                    </div>
+                </div>  
+                <div class="grid-item">
+                    <div class="shoe">
+                        <div class="imgshoe">
+                            
+                            <i class="fa-solid fa-heart" style="color: #f21c1c; padding-left: 150px; font-size: 20px;"></i>
+                            <img class="imageanimation" src="../img/jordan1uncblue.jpg" alt="" width="200px">
+
+                            <div class="middle">
+                                <div class="text">BUY</div>
+                                <div class="text">ADD TO CART</div>
+                            </div>
+                        
+                        </div>
+                        <div class="info">
+                            <div class="name">
+                                <p style="font-size: 20px; ">Jordan 1</p>
+                            </div>
+                            <div class="cost">
+                                <p style="font-size: 20px; ">$599.00</p>
+                            </div>
+                        </div>
+                        <p style="margin-right: 170px;">infomation</p>
+                    </div>
+                    
+                </div>
+                <div class="grid-item">
+                    <div class="shoe">
+                        <div class="imgshoe">
+                            
+                            <i class="fa-solid fa-heart" style="color: #f21c1c; padding-left: 150px; font-size: 20px;"></i>
+                            <img class="imageanimation" src="../img/jordan1uncblue.jpg" alt="" width="200px">
+
+                            <div class="middle">
+                                <div class="text">BUY</div>
+                                <div class="text">ADD TO CART</div>
+                            </div>
+                        
+                        </div>
+                        <div class="info">
+                            <div class="name">
+                                <p style="font-size: 20px; ">Jordan 1</p>
+                            </div>
+                            <div class="cost">
+                                <p style="font-size: 20px; ">$599.00</p>
+                            </div>
+                        </div>
+                        <p style="margin-right: 170px;">infomation</p>
+                    </div>
+                </div>
+                 
+              </div>
+
+              <input class="btn3" type="button" value="View More >>">
+        </div>
+
+        
+    </div>
+</body>
+</html>
