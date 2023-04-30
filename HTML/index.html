@@ -370,6 +370,7 @@
             height: 300px;
             margin: 0 auto;
             margin-top: 130px;
+            margin-bottom: 130px;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -398,9 +399,10 @@
 
         .aboutus{
             display: flex;
-            width: 1320px;
+            width: 1400px;
             margin: 0 auto;
             margin-top: 130px;
+            margin-bottom: 60px;
         }
 
         .abtusright{
@@ -434,6 +436,129 @@
             border: solid 1px rgb(211, 208, 208);
         }
 
+        .footer{
+            width: 1400px;
+            min-height: 500px;
+            margin: 0 auto;
+            background: #FBFBFB;
+            
+        }
+
+        .footersearch{
+            display: flex;
+            width: 1320px;
+            margin: 0 auto;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 70px;
+            
+        }
+        .footersearch__left {
+            width: 450px;
+            height: auto;
+            margin-left: 20px;
+            
+        }
+        
+        
+        .footersearch__right{
+           width: 700px;
+           height: 50px;
+           
+        }
+        .footersearch__right .emaill{
+            padding-left: 20px;
+            width: 460px;
+            height: 50px;
+            border: solid 1px #EEEEEE;
+
+        }
+
+        .footersearch__right .btnsubmit{
+            width: 200px;
+            height: 52px;
+            margin-top: 2px;
+            margin-left: -5px;
+            border-radius: 0 10px 10px 0;
+            background: linear-gradient(to right,#ca73fe, #f1b0ad);
+            color: #ffffff;
+            font-size: 20px;
+            border: none;
+
+        }
+        .btnsubmit:hover{
+            color: #0b0205;
+            background: none;
+            border: solid 1px rgb(211, 208, 208);
+        }
+
+
+
+        /* <div class="footersearch__right">
+                        <input type="text" id="email" placeholder="Enter your email address here">
+                        <input type="button" value="Submit" class="btnsubmit">
+                    </div> */
+        
+        /*  <div class="footerinfo">
+                <div class="footerinfo_item">1</div>
+                <div class="footerinfo_item">2</div>
+                <div class="footerinfo_item">3</div>  
+                <div class="footerinfo_item">4</div>
+                 
+            </div> */
+
+            .footerinfo {
+                width: 1300px;
+                margin: 0 auto;
+                display: grid;
+                grid-template-columns: 180px 180px 180px 180px;
+                margin-top: 60px;
+                margin-bottom: 60px;
+                justify-content: space-between;
+                
+                
+            }
+
+           
+            .footer__item1 a{
+                color: #404040;
+                text-decoration: none;
+                font-size: 22px;
+            }
+
+            .footer__item1 {
+                margin-bottom: 20px;
+                
+            }
+            .footer__item a{
+                text-decoration: none;
+                color: #A8A8A8;
+                font-size: 16px;
+                
+            }
+            .footer__item{
+                margin-bottom: 10px;
+            }
+            .footer__item:hover>a{
+                color: #0b0205;
+            }
+
+
+            
+            
+            /* <div class="footerinfo">
+                <div class="footerinfo_item">
+                    <h2 class="footer__item1"><a href="#">Corporatestes</a></h2>
+                    
+                    <p class="footer__item"><a href="#">Feedback</a></p>
+                    <p class="footer__item"><a href="#">Jobs</a></p>
+                    <p class="footer__item"><a href="#">Updates</a></p>
+                    <p class="footer__item"><a href="#">Purchase Rules</a></p>
+                    <p class="footer__item"><a href="#">For partners</a></p>
+                </div> */
+            
+
+        
         
 
         
@@ -746,8 +871,8 @@
             <div class="banner2item" style="margin-right: 70px;">
                 <!-- <i class="fa-regular fa-comments"></i> -->
                 <i class="fa-regular fa-comments" style="color: #FFFFFD; font-size: 50px; "></i>
-                <h2>Free Delivery</h2>
-                <p>Explore our edit of everything that ship within 24 hours.</p>
+                <h2>24x7 Support</h2>
+                <p>We are here for you when you feel needled.</p>
             </div>
         </div>
 
@@ -817,6 +942,64 @@
                 <input type="button" value="LEARN MORE" class="btnlearnmore">
                 
             </div>
+        </div>
+
+        <div class="footer">
+            <div class="footersearch">
+                    <div class="footersearch__left">
+                        <h1>Subcscribe To Our Newsletter</h1>
+                        <p>And get best offer and updates about your favorite brands <br> or products</p>
+                    </div>
+                    <div class="footersearch__right">
+                        <input type="text" id="email" placeholder="Enter your email address here" class="emaill">
+                        <input type="button" value="SUBMIT" class="btnsubmit">
+                    </div>
+                    
+            </div>
+            <div class="hr" style="width: 1295px; margin-left: 55px; margin-top: 50px; border-top: 1px solid rgb(207, 206, 206);"> <hr> </div>
+
+            <div class="footerinfo">
+                <div class="footerinfo_item">
+                    <h2 class="footer__item1"><a href="#">PRODUCTS</a></h2>
+                    
+                    <p class="footer__item"><a href="#">Footwear</a></p>
+                    <p class="footer__item"><a href="#">Clothing</a></p>
+                    <p class="footer__item"><a href="#">Accessories</a></p>
+                    <p class="footer__item"><a href="#">Outlet - Sale</a></p>
+                    <p class="footer__item"><a href="#">New Arrivals</a></p>
+                </div>
+                <div class="footerinfo_item">
+                    <h2 class="footer__item1"><a href="#">SPORTS</a></h2>
+                    
+                    <p class="footer__item"><a href="#">Football</a></p>
+                    <p class="footer__item"><a href="#">Gym/Training</a></p>
+                    <p class="footer__item"><a href="#">Tennis</a></p>
+                    <p class="footer__item"><a href="#">Outdoor</a></p>
+                    <p class="footer__item"><a href="#">Basketball</a></p>
+                    <p class="footer__item"><a href="#">Swimming</a></p>
+                </div>
+                <div class="footerinfo_item">
+                    <h2 class="footer__item1"><a href="#">COLLECTIONS</a></h2>
+                    
+                    <p class="footer__item"><a href="#">Ulraboost</a></p>
+                    <p class="footer__item"><a href="#">Superstar</a></p>
+                    <p class="footer__item"><a href="#">NMD</a></p>
+                    <p class="footer__item"><a href="#">Stan Smith</a></p>
+                    <p class="footer__item"><a href="#">Sustainabilty</a></p>
+                    <p class="footer__item"><a href="#">Predator</a></p>
+                </div>  
+                <div class="footerinfo_item">
+                    <h2 class="footer__item1"><a href="#">COMPANY INFO</a></h2>
+                    
+                    <p class="footer__item"><a href="#">About Us</a></p>
+                    <p class="footer__item"><a href="#">In News</a></p>
+                    <p class="footer__item"><a href="#">Privacy Policy</a></p>
+                    <p class="footer__item"><a href="#">Affiliate</a></p>
+                    <p class="footer__item"><a href="#">Terms and Conditions</a></p>
+                </div>
+                 
+            </div>
+
         </div>
         
     </div>
